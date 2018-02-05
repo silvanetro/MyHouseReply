@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorBackgroundPageMain"
+    tools:context="ro.diamondtech.myhousereply.DetailObjectRoomActivity">
+
+    <ImageView
+        android:id="@+id/imageViewDevicesBox"
+        android:layout_width="0dp"
+        android:layout_height="197dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/shape_rectangle_stroke" />
+
+    <TextView
+        android:id="@+id/textViewDeviceName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/device_name"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="@color/colorTextActiv"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewDevicesBox"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/imageViewDevicesBox"
+        app:layout_constraintTop_toTopOf="@+id/imageViewDevicesBox" />
+
+    <ImageView
+        android:id="@+id/imageViewBoxImageDevice"
+        android:layout_width="85dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="68dp"
+        app:layout_constraintStart_toStartOf="@+id/imageViewDevicesBox"
+        app:layout_constraintTop_toTopOf="@+id/imageViewDevicesBox"
+        app:srcCompat="@drawable/shape_rectangle_stroke" />
+
+    <TextView
+        android:id="@+id/textViewDeviceStatus1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
+        android:text="@string/device_status_on"
+        android:textColor="@color/colorTextAtention"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewBoxImageDevice"
+        app:layout_constraintStart_toStartOf="@+id/imageViewBoxImageDevice"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewBoxImageDevice" />
+
+    <TextView
+        android:id="@+id/textViewDetailDevice"
+        android:layout_width="0dp"
+        android:layout_height="58dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:text="@string/device_details"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toStartOf="@+id/switchSelectDivece1"
+        app:layout_constraintStart_toEndOf="@+id/imageViewBoxImageDevice"
+        app:layout_constraintTop_toTopOf="@+id/imageViewBoxImageDevice" />
+
+    <Switch
+        android:id="@+id/switchSelectDivece1"
+        android:layout_width="wrap_content"
+        android:layout_height="23dp"
+        android:layout_marginEnd="8dp"
+        android:checked="false"
+        android:splitTrack="false"
+        android:switchTextAppearance="@style/TextAppearance.AppCompat"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textColor="@color/colorPrimaryLight"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewDevicesBox"
+        app:layout_constraintTop_toTopOf="@+id/imageViewBoxImageDevice"
+        tools:checked="false" />
+
+    <TextView
+        android:id="@+id/textViewValueDevice"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_marginStart="28dp"
+        android:text="@string/device_value"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewDeviceStatus1"
+        app:layout_constraintStart_toEndOf="@+id/textViewDeviceStatus1"
+        app:layout_constraintTop_toTopOf="@+id/textViewDeviceStatus1" />
+
+    <TextView
+        android:id="@+id/textViewUMDevice"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="4dp"
+        android:text="@string/device_um"
+        android:textAlignment="viewStart"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewValueDevice"
+        app:layout_constraintEnd_toStartOf="@+id/textViewLimitOn"
+        app:layout_constraintHorizontal_bias="0.144"
+        app:layout_constraintStart_toEndOf="@+id/textViewValueDevice" />
+
+    <ImageView
+        android:id="@+id/imageViewImageDevice"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewBoxImageDevice"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewBoxImageDevice"
+        app:layout_constraintStart_toStartOf="@+id/imageViewBoxImageDevice"
+        app:layout_constraintTop_toTopOf="@+id/imageViewBoxImageDevice"
+        app:layout_constraintVertical_bias="0.642"
+        app:srcCompat="@drawable/ic_aragaz" />
+
+    <TextView
+        android:id="@+id/textViewAddToRoom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:text="@string/title_switch_add_room"
+        android:textSize="8sp"
+        app:layout_constraintBottom_toTopOf="@+id/switchSelectDivece1"
+        app:layout_constraintEnd_toEndOf="@+id/switchSelectDivece1"
+        app:layout_constraintHorizontal_bias="0.804"
+        app:layout_constraintStart_toStartOf="@+id/switchSelectDivece1" />
+
+    <TextView
+        android:id="@+id/textViewLimitOn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="@string/title_device_limit_on"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewLimitOff"
+        app:layout_constraintStart_toEndOf="@+id/textViewUMDevice"
+        app:layout_constraintStart_toStartOf="@+id/textViewLimitOff" />
+
+    <TextView
+        android:id="@+id/textViewLimitOff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:layout_marginEnd="70dp"
+        android:text="@string/title_device_limit_off"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewDevicesBox"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewDevicesBox" />
+
+    <EditText
+        android:id="@+id/editTextLimitON"
+        android:layout_width="65dp"
+        android:layout_height="35dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="2dp"
+        android:ems="10"
+        android:gravity="center_horizontal"
+        android:inputType="text"
+        android:text="@string/device_limit_on"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textSize="10sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textViewLimitOn"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewDevicesBox"
+        app:layout_constraintStart_toEndOf="@+id/textViewLimitOn" />
+
+    <EditText
+        android:id="@+id/editTextLimitOFF"
+        android:layout_width="65dp"
+        android:layout_height="35dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:gravity="center_horizontal"
+        android:inputType="text"
+        android:text="@string/device_limit_off"
+        android:textSize="10sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textViewLimitOff"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewDevicesBox"
+        app:layout_constraintStart_toEndOf="@+id/textViewLimitOff" />
+
+    <TextView
+        android:id="@+id/textViewDeviceCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="2dp"
+        android:gravity="center_vertical"
+        android:text="@string/device_code"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewDevicesBox"
+        app:layout_constraintTop_toTopOf="@+id/imageViewDevicesBox" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/device_code"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewDeviceCode"
+        app:layout_constraintEnd_toStartOf="@+id/textViewDeviceCode"
+        app:layout_constraintTop_toTopOf="@+id/textViewDeviceCode"
+        app:layout_constraintVertical_bias="1.0" />
+
+</android.support.constraint.ConstraintLayout>

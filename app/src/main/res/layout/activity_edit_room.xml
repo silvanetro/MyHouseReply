@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollEditRoom"
+    android:background="@color/colorBackgroundPageMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorBackgroundPageMain"
+        tools:context="ro.diamondtech.myhousereply.EditRoomActivity">
+
+        <TextView
+            android:id="@+id/textViewEditTitleRoom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:text="@string/title_page_edit_room"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textColor="@color/colorTextActiv"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="14dp" />
+
+        <ImageView
+            android:id="@+id/imageViewDataRoomBox"
+            android:layout_width="0dp"
+            android:layout_height="134dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewEditTitleRoom"
+            app:srcCompat="@drawable/shape_rectangle_stroke" />
+
+        <TextView
+            android:id="@+id/textViewRoomName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="58dp"
+            android:text="@string/room_name"
+            app:layout_constraintStart_toStartOf="@+id/imageViewDataRoomBox"
+            app:layout_constraintTop_toTopOf="@+id/imageViewDataRoomBox" />
+
+        <EditText
+            android:id="@+id/editTextRoomName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="42dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="@string/room_name"
+            app:layout_constraintEnd_toEndOf="@+id/imageViewDataRoomBox"
+            app:layout_constraintHorizontal_bias="0.058"
+            app:layout_constraintStart_toEndOf="@+id/textViewRoomName"
+            app:layout_constraintTop_toTopOf="@+id/imageViewDataRoomBox" />
+
+        <TextView
+            android:id="@+id/textViewRoomCode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="26dp"
+            android:text="@string/room_code"
+            app:layout_constraintStart_toStartOf="@+id/imageViewDataRoomBox"
+            app:layout_constraintTop_toBottomOf="@+id/textViewRoomName" />
+
+        <EditText
+            android:id="@+id/editTextCodeRoom"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="12dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="@string/room_code"
+            app:layout_constraintEnd_toEndOf="@+id/imageViewDataRoomBox"
+            app:layout_constraintStart_toEndOf="@+id/textViewRoomCode"
+            app:layout_constraintTop_toBottomOf="@+id/editTextRoomName" />
+
+        <!--       <include layout="@layout/activity_detail_object_room"> -->
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerview_room"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageViewDataRoomBox" />
+
+
+        <ImageView
+            android:id="@+id/imageViewBoxListRooms"
+            android:layout_width="0dp"
+            android:layout_height="84dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="24dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/recyclerview_room"
+            app:srcCompat="@drawable/shape_rectangle_stroke" />
+
+        <TextView
+            android:id="@+id/textViewTitleListRooms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/title_list_room"
+            android:textColor="@color/colorTextActiv"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="@+id/imageViewBoxListRooms"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/imageViewBoxListRooms"
+            app:layout_constraintTop_toTopOf="@+id/imageViewBoxListRooms" />
+
+        <TextView
+            android:id="@+id/textViewListNameRoom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/list_name_room"
+            app:layout_constraintStart_toStartOf="@+id/imageViewBoxListRooms"
+            app:layout_constraintTop_toBottomOf="@+id/textViewTitleListRooms" />
+
+        <Button
+            android:id="@+id/buttonDeleteRoom"
+            android:layout_width="77dp"
+            android:layout_height="36dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:background="@color/colorPrimaryLight"
+            android:text="@string/list_room_delete"
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="@+id/textViewListNameRoom"
+            app:layout_constraintEnd_toEndOf="@+id/imageViewBoxListRooms"
+            app:layout_constraintTop_toTopOf="@+id/textViewListNameRoom" />
+
+        <ImageView
+            android:id="@+id/imageViewBoxSaveRoom"
+            android:layout_width="77dp"
+            android:layout_height="42dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="@+id/imageViewDataRoomBox"
+            app:layout_constraintTop_toTopOf="@+id/imageViewDataRoomBox"
+            app:srcCompat="@drawable/shape_rectangle_stroke" />
+
+        <Button
+            android:id="@+id/buttonSaveRoom"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="4dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="4dp"
+            android:background="@color/colorPrimaryLight"
+            android:text="@string/button_save_data_room"
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageViewBoxSaveRoom"
+            app:layout_constraintEnd_toEndOf="@+id/imageViewBoxSaveRoom"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/imageViewBoxSaveRoom"
+            app:layout_constraintTop_toTopOf="@+id/imageViewBoxSaveRoom" />
+
+        <ProgressBar
+            android:id="@+id/progressBarLoadingRoom"
+            style="@style/Widget.AppCompat.ProgressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </android.support.constraint.ConstraintLayout>
+
+</ScrollView>
+
+
+

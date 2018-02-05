@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraint_status_device"
+    android:layout_width="wrap_content"
+    android:layout_height="120dp"
+    android:background="@color/colorBackgroundPageMain"
+    tools:context="ro.diamondtech.myhousereply.StatusActivity">
+
+    <TextView
+        android:id="@+id/textViewDeviceNameStatus"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="@string/device_name"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="@color/colorTextActiv"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/imageViewBoxImageDeviceStatus"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewBoxImageDeviceStatus"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/imageViewBoxImageDeviceStatus"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageViewBoxImageDeviceStatus"
+        android:layout_width="86dp"
+        android:layout_height="61dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/shape_rectangle_stroke" />
+
+    <TextView
+        android:id="@+id/textViewValueDeviceStatus"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:gravity="center"
+        android:text="@string/device_value"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewBoxImageDeviceStatus"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/imageViewBoxImageDeviceStatus"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewBoxImageDeviceStatus" />
+
+    <ImageView
+        android:id="@+id/imageViewImageDeviceStatus"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewBoxImageDeviceStatus"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewBoxImageDeviceStatus"
+        app:layout_constraintStart_toStartOf="@+id/imageViewBoxImageDeviceStatus"
+        app:layout_constraintTop_toTopOf="@+id/imageViewBoxImageDeviceStatus"
+        app:layout_constraintVertical_bias="0.642"
+        app:srcCompat="@drawable/ic_aragaz" />
+
+    <View
+        android:id="@+id/viewLineHoriz"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginBottom="4dp"
+        android:background="@color/colorBackgroundButtons"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

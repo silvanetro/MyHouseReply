@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="ro.diamontech.myhousereply">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="ro.diamondtech.myhousereply.MainActivity"
+            android:windowSoftInputMode="stateHidden"
+            android:launchMode="singleTop">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="ro.diamondtech.myhousereply.StatusActivity"
+            android:label="@string/title_page_status"
+            android:parentActivityName="ro.diamondtech.myhousereply.MainActivity"
+            >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="ro.diamondtech.myhousereply.MainActivity" />
+        </activity>
+        <activity android:name="ro.diamondtech.myhousereply.EditRoomActivity"
+            android:label="@string/title_page_edit_room"
+            android:windowSoftInputMode="stateHidden"
+            android:parentActivityName="ro.diamondtech.myhousereply.StatusActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="ro.diamondtech.myhousereply.StatusActivity" />
+        </activity>
+        <activity android:name="ro.diamondtech.myhousereply.EditHouseActivity"
+            android:label="@string/title_page_edit_house"
+            android:windowSoftInputMode="stateHidden"
+            android:parentActivityName="ro.diamondtech.myhousereply.StatusActivity"
+            >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="ro.diamondtech.myhousereply.StatusActivity" />
+        </activity>
+        <activity android:name="ro.diamondtech.myhousereply.SettingsMainActivity"
+            android:label="@string/title_page_settings"
+            android:parentActivityName="ro.diamondtech.myhousereply.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="ro.diamondtech.myhousereply.MainActivity" />
+        </activity>
+        <activity android:name="ro.diamondtech.myhousereply.DetailObjectRoomActivity"
+
+            android:parentActivityName="ro.diamondtech.myhousereply.StatusActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="ro.diamondtech.myhousereply.StatusActivity" />
+        </activity>
+
+        <!-- Device Room ContentProvider -->
+        <provider
+            android:name="ro.diamondtech.myhousereply.data.MyHouseProvider"
+            android:authorities="@string/content_authority"
+            android:exported="false"/>
+
+    </application>
+
+</manifest>

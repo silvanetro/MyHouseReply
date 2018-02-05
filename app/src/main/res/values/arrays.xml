@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="pref_device">
+        <item>@string/pref_device_device1_key</item>
+        <item>@string/pref_device_device2_key</item>
+    </string-array>
+
+    <string-array name="pref_val_device">
+        <item>@string/pref_device_device1_val</item>
+        <item>@string/pref_device_device2_val</item>
+    </string-array>
+
+</resources>

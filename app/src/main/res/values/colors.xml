@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3f51b5</color>
+    <color name="colorPrimaryDark">#303f9f</color>
+    <color name="colorAccent">#ff4081</color>
+    <color name="colorTextInactiv">#808080</color>
+    <color name="colorTextActiv">#ffffff</color>
+    <color name="colorTextAlarma">#ff0000</color>
+    <color name="colorTextOk">#01d91d</color>
+    <color name="colorTextAtention">#fdfd00</color>
+    <color name="colorBackgroundPageMain">#055780</color>
+    <color name="colorBackgroundPageSelections">#055780</color>
+    <color name="colorBackgroundPageStatus">#055780</color>
+    <color name="colorBackgroundPageHouse">#055780</color>
+    <color name="colorBackgroundPageRoom">#055780</color>
+    <color name="colorBackgroundPageDetails">#055780</color>
+    <color name="colorBackgroundPageSettings">#055780</color>
+    <color name="colorBackgroundButtons">#434546</color>
+
+    <color name="colorPrimaryLight">#7986cb</color>
+
+    <color name="colorGood">#4CAF50</color>
+    <color name="colorBad">#F44336</color>
+
+</resources>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBoxPreference
+        android:title="@string/pref_active_only_label"
+        android:defaultValue="@string/pref_active_only_default"
+        android:key="@string/pref_active_only_key"
+       android:summaryOn="@string/pref_active_only_msg_on"
+        android:summaryOff="@string/pref_active_only_msg_off"
+        />
+    <CheckBoxPreference
+        android:title="@string/pref_enable_notifications_label"
+        android:key="@string/pref_enable_notifications_key"
+        android:defaultValue="@string/pref_enable_notifications_false"
+        android:summaryOn="@string/pref_notifications_msg_on"
+        android:summaryOff="@string/pref_notifications_msg_off"
+        />
+
+    <EditTextPreference
+        android:title="@string/pref_server_address_label"
+        android:key="@string/pref_server_address_key"
+        android:defaultValue="@string/pref_server_address_default"
+       />
+
+    <ListPreference
+        android:title="@string/pref_device_set_label"
+        android:key="@string/pref_device_set_key"
+        android:defaultValue="@string/pref_device_set_default"
+        android:entries="@array/pref_device"
+        android:entryValues="@array/pref_val_device"
+
+        />
+
+
+</PreferenceScreen>

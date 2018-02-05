@@ -1,0 +1,254 @@
+<resources>
+
+    <string name="app_name">My House Reply</string>
+    <string name="title_house_data">House data</string>
+    <string name="title_page_status">Status</string>
+    <string name="title_page1">My House</string>
+    <string name="title_login">Login</string>
+    <string name="button_login">START</string>
+    <string name="user_app">User</string>
+    <string name="password_app">Password</string>
+    <string name="add_user">New user</string>
+    <string name="forgot_pass">Forgot password</string>
+    <string name="button_anonymous">Anonymous Demo</string>
+    <string name="user_anonymous">Demo</string>
+    <string name="pass_anonymous">Anonymous</string>
+
+    <string name="title_page_edit_house">Edit house</string>
+
+
+    <string name="title_page_selections_main">Device selection</string>
+    <string name="button_status">Status</string>
+    <string name="button_edit_house">Houses</string>
+    <string name="button_add_house">Add House</string>
+    <string name="button_settings">Settings</string>
+    <string name="house_name">House name</string>
+    <string name="house_code">House code</string>
+
+    <string name="title_page_edit_room">Edit room</string>
+    <string name="room_name">Room name</string>
+    <string name="room_code">Room code</string>
+    <string name="button_add_room">Add room</string>
+    <string name="device_name">Device name</string>
+    <string name="device_code">Device code</string>
+    <string name="alarm_name">Alarm</string>
+    <string name="alarm_on">Alarm ON</string>
+    <string name="alarm_off">Alarm OFF</string>
+
+    <string name="title_page_settings">Settings</string>
+
+    <string name="object_house">house</string>
+    <string name="object_room">room</string>
+    <string name="object_door">door</string>
+    <string name="object_yale">bolt</string>
+    <string name="object_thermostat">thermostat</string>
+    <string name="object_bulb">light</string>
+    <string name="object_luminosity">luminosity</string>
+    <string name="object_temperature">air temperature</string>
+    <string name="object_air_humidity">air humidity</string>
+    <string name="object_soil_humidity">soil humidity</string>
+    <string name="object_smoke">smoke</string>
+    <string name="object_gas">gas</string>
+    <string name="object_co2">CO2</string>
+    <string name="object_wind">wind</string>
+    <string name="object_blind">blind</string>
+    <string name="object_water_tank">water tank</string>
+    <string name="object_movement">movement</string>
+    <string name="object_power">electric power</string>
+    <string name="object_battery">battery</string>
+    <string name="object_boiling_vessel">boiling vessel</string>
+    <string name="object_fan">electric fan</string>
+    <string name="object_conditioned_air">conditioned air</string>
+
+    <string name="object_house_description">house</string>
+    <string name="object_room_description">room</string>
+    <string name="object_door_description">door</string>
+    <string name="object_yale_description">bolt</string>
+    <string name="object_thermostat_description">thermostat</string>
+    <string name="object_bulb_description">bulb</string>
+    <string name="object_luminosity_description">luminosity</string>
+    <string name="object_temperature_description">temperature</string>
+    <string name="object_air_humidity_description">air humidity</string>
+    <string name="object_soil_humidity_description">soil humidity</string>
+    <string name="object_smoke_description">smoke</string>
+    <string name="object_gas_description">gas</string>
+    <string name="object_co2_description">CO2</string>
+    <string name="object_wind_description">wind</string>
+    <string name="object_blind_description">blind</string>
+    <string name="object_water_tank_description">water tank</string>
+    <string name="object_movement_description">movement</string>
+    <string name="object_power_description">electric power</string>
+    <string name="object_battery_description">battery</string>
+    <string name="object_boiling_vessel_description">boiling vessel</string>
+    <string name="object_fan_description">electric fan</string>
+    <string name="object_conditioned_air_description">conditioned air</string>
+
+
+
+    <string name="msg_no_house">You need to add a house!</string>
+    <string name="msg_no_room">You need to add a room</string>
+    <string name="msg_no_room_in_this_house">You need to add a room for </string>
+    <string name="msg_no_object">You need to add an object</string>
+    <string name="button_add_object">Add object</string>
+    <string name="button_edit_room">Rooms</string>
+    <string name="local_server">localhost</string>
+    <string name="message_demo">Empty User/Pass for DEMO</string>
+    <string name="button_save_data_house">Save data</string>
+    <string name="button_save_data_room">Save data</string>
+    <string name="title_devices">Devices</string>
+    <string name="device_details">Device details</string>
+    <string name="device_status_off">OFF line</string>
+    <string name="device_status_on">ON line</string>
+    <string name="device_status_no_value">--</string>
+    <string name="device_selection_on">In room</string>
+    <string name="device_selection_off">OUT of room</string>
+    <string name="switch_device_selection">Select</string>
+    <string name="device_value">Value</string>
+    <string name="device_um">UM</string>
+    <string name="title_switch_add_room">Added to the room</string>
+    <string name="title_list_room">Rooms</string>
+    <string name="list_name_room">Room name</string>
+    <string name="list_room_delete">Delete room</string>
+    <string name="list_house_delete">Delete house</string>
+    <string name="title_list_houses">Houses</string>
+    <string name="list_name_house">House name</string>
+    <string name="device_limit_off">OFF</string>
+    <string name="device_limit_on">ON</string>
+    <string name="title_device_limit_off">Limit OFF</string>
+    <string name="title_device_limit_on">Limit ON</string>
+    <string name="title_device_sensor">senzor</string>
+    <string name="title_device_exec">executie</string>
+
+
+
+<!--Provider -->
+    <string name="content_authority">ro.diamondtech.myhousereply</string>
+
+
+
+    <!-- - - - - - - - - - - - - - - -
+   - Used by MyHousePreferences  -
+   - - - - - - - - - - - - - - - -->
+
+
+    <!-- Label,key and default value for the remember pass preference -->
+    <string name="pref_remember_user_label">Remember me</string>
+    <string name="pref_remember_user_key" translatable="false">remember_pass</string>
+    <string name="pref_remember_user_default" translatable="false">0</string>
+
+
+    <!-- Label,key and default value for the server address preference -->
+    <string name="pref_server_address_label">Server address</string>
+    <string name="pref_server_address_key" translatable="false">server_address</string>
+    <string name="pref_server_address_default" translatable="false">localhost</string>
+
+    <!-- Label,key and default value for the email address preference -->
+    <string name="pref_email_address_label">Email</string>
+    <string name="pref_email_address_key" translatable="false">email_address</string>
+    <string name="pref_email_address_default" translatable="false">office@myhouse.com</string>
+
+
+    <!-- Label,key and default value for the display preference -->
+    <string name="pref_display_label">Display</string>
+    <string name="pref_display_key" translatable="false">display</string>
+    <string name="pref_display_default" translatable="false">0</string>
+
+    <!-- Label,key and default value for the show only active device preference -->
+    <string name="pref_active_only_label">Active device only</string>
+    <string name="pref_active_only_key" translatable="false">device_active_only</string>
+    <string name="pref_active_only_default" translatable="false">0</string>
+    <string name="pref_active_only_msg_on" translatable="false">"Showing only device online"</string>
+    <string name="pref_active_only_msg_off" translatable="false">Showing all device selected</string>
+
+    <!-- Label,key and default value for the device selected preference -->
+    <string name="pref_device_set_label">Device selection</string>
+    <string name="pref_device_set_key" translatable="false">device_selected</string>
+    <string name="pref_device_set_default" translatable="false">custom</string>
+
+    <string name="pref_device_device1_key" translatable="false">Custom</string>
+    <string name="pref_device_device2_key" translatable="false">D-Link</string>
+
+    <string name="pref_device_device1_val" translatable="false">custom</string>
+    <string name="pref_device_device2_val" translatable="false">dlink600</string>
+
+
+    <string name="pref_code_room_key" translatable="false">pref_code_room</string>
+    <!-- default room code is 00000 for the new room in the empty house  -->
+    <string name="pref_code_room_default" translatable="false">00000</string>
+    <string name="pref_name_room_key" translatable="false">pref_name_room</string>
+    <string name="name_first_room" translatable="false">My room</string>
+    <string name="code_first_room" translatable="false">room001</string>
+
+
+    <string name="pref_code_user_key" translatable="false">pref_code_user</string>
+    <string name="pref_code_user_default" translatable="false">11111</string>
+
+    <string name="pref_code_house_key" translatable="false">pref_code_house</string>
+    <!-- default house code is 00000 for the empty house -->
+    <string name="pref_code_house_default" translatable="false">00000</string>
+    <string name="pref_name_house_key" translatable="false">pref_name_house</string>
+    <string name="name_first_house" translatable="false">My House</string>
+    <string name="code_first_house" translatable="false">house001</string>
+
+
+    <string name="pref_code_device_key" translatable="false">pref_code_device</string>
+    <string name="pref_code_device_default" translatable="false">10001</string>
+
+
+
+
+
+    <!-- Key name for storing location in SharedPreferences - not implemented yet......-->
+    <string name="pref_location_key" translatable="false">location</string>
+
+    <!-- Default postal code for location preference -->
+    <string name="pref_location_default" translatable="false">Romania,Piatra Neamt</string>
+
+    <!-- Label for the temperature units preference -->
+    <string name="pref_units_label">Temperature Units</string>
+
+    <!-- Label for metric option in temperature unit preference -->
+    <string name="pref_units_label_metric">Metric</string>
+
+    <!-- Label for imperial option in temperature unit preference -->
+    <string name="pref_units_label_imperial">Imperial</string>
+
+    <!-- Key name for temperature unit preference in SharedPreferences -->
+    <string name="pref_units_key" translatable="false">units</string>
+
+    <!-- Value in SharedPreferences for metric temperature unit option -->
+    <string name="pref_units_metric" translatable="false">metric</string>
+
+    <!-- Value in SharedPreferences for imperial temperature unit option -->
+    <string name="pref_units_imperial" translatable="false">imperial</string>
+
+    <!-- Strings related to Notification Enabled preference -  not implemented yet...... -->
+    <string name="pref_enable_notifications_key" translatable="false">enable_notifications</string>
+    <string name="pref_enable_notifications_label">Enable notifications</string>
+    <string name="pref_enable_notifications_true">1</string>
+    <string name="pref_enable_notifications_false">0</string>
+    <string name="pref_last_notification">last_notification</string>
+    <string name="pref_notifications_msg_on">Send notifications on alarms</string>
+    <string name="pref_notifications_msg_off">No notifications on alarms</string>
+
+    <!-- Strings related to message -->
+    <string name="msg_house_no_data">No data, please add a room.</string>
+    <string name="msg_room_no_data">No data, please add a device in the room</string>
+    <string name="msg_device_no_data">No data, please add data for this device.</string>
+    <string name="msg_err_login">Login error ! Please check also your network.</string>
+    <string name="msg_save_house">Data is saved!</string>
+    <string name="msg_save_room">Device added and data is saved!</string>
+    <string name="msg_update_room">Record update!</string>
+    <string name="msg_no_update_room">Records not updated!</string>
+    <string name="msg_showing_device_room">Device is showing in this room!</string>
+    <string name="msg_no_showing_device_room">Device is hidden in this room!</string>
+
+    <string name="msg_delete_room">Room is erased!</string>
+    <string name="delete_room_dialog_msg">Delete this room?</string>
+    <string name="btn_delete">Delete room</string>
+    <string name="msg_device_set">Device is SET </string>
+
+
+
+
+</resources>
